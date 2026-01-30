@@ -43,7 +43,7 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
-    # 'jazzmin',
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -238,8 +238,8 @@ USE_I18N = True
 USE_TZ = True
 
 JAZZMIN_SETTINGS = {
-    "site_title": "Kogweno Pri School",
-    "site_header": "KOGWENO ERP Admin",
+    "site_title": "Kogweno School",
+    "site_header": "KOGWENO SCHOOL",
     "site_brand": "Kogweno Primary",
     
     # Colors matching your CSS variables

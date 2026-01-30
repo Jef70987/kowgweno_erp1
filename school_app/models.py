@@ -148,8 +148,9 @@ class IPWhitelist(models.Model):
     
     def is_active_now(self):
         """Check if IP is currently allowed based on time restrictions"""
-        if self.status != 'Active':
-            return False
+        if self.status == 'Active':
+            return True
+        
         
         now = timezone.now()
         

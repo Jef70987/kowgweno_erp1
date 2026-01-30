@@ -77,8 +77,8 @@ class IPWhitelistMiddleware:
             
             logger.warning(f"Unauthorized IP {client_ip} attempted access")
             return HttpResponseForbidden(
-                "Access denied: Your IP address is not authorized to access this system. "
-                "Please contact system administrator to request access."
+                "Access denied: You are not authorized to access this system. "
+                "Please contact system administrator."
             )
         
         return self.get_response(request)

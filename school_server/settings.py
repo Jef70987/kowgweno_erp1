@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',
-    'rest_framework',
+    # 'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_simplejwt',
     'school_app',

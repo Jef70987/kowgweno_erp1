@@ -7,7 +7,9 @@ from django.utils import timezone
 from django.contrib import messages
 
 from .models import *
-
+ADMIN_SITE_HEADER = 'KOGWENO SCHOOL ERP SYSTEM ADMINISTRATION'
+ADMIN_SITE_TITLE = 'ERP Admin Portal'
+ADMIN_INDEX_TITLE = 'System Administration Dashboard'
 # ==================== CUSTOM ADMIN CLASSES ====================
 class ReadOnlyAdminMixin:
     """Mixin to make admin read-only"""

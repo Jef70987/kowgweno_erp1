@@ -62,7 +62,7 @@ AUTH_USER_MODEL = 'school_app.User'
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware', 
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware', 
+    
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -72,7 +72,7 @@ MIDDLEWARE = [
     # Custom middleware
     'school_app.middleware.ip_whitelists.IPWhitelistMiddleware',  # Add this
 ]
-
+# 'whitenoise.middleware.WhiteNoiseMiddleware', 
 # Admin customization
 ADMIN_SITE_HEADER = 'KOGWENO SCHOOL ERP SYSTEM ADMINISTRATION'
 ADMIN_SITE_TITLE = 'ERP Admin Portal'
@@ -428,5 +428,5 @@ JAZZMIN_UI_TWEAKS = {
 # Static files settings for Render
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 

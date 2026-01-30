@@ -25,8 +25,7 @@ class IPWhitelistMiddleware:
         
         # Check if IP is whitelisted
         try:
-            ip_record = IPWhitelist.objects.get(ip_address=client_ip, status='Active')
-            
+            ip_record = IPWhitelist.objects.get(ip_address=client_ip)
             # Check time restrictions
             if not ip_record.is_active_now():
                 logger.warning(f"IP {client_ip} access denied due to time restrictions")

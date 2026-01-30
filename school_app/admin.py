@@ -5,11 +5,12 @@ from django.utils.html import format_html
 from django.urls import reverse
 from django.utils import timezone
 from django.contrib import messages
-
 from .models import *
-ADMIN_SITE_HEADER = 'KOGWENO SCHOOL ERP SYSTEM ADMINISTRATION'
-ADMIN_SITE_TITLE = 'ERP Admin Portal'
-ADMIN_INDEX_TITLE = 'System Administration Dashboard'
+
+
+admin.site.site_header = "KOGWENO ERP ADMINISTRATION"
+admin.site.site_title = "Admin Portal"
+admin.site.index_title = "Welcome to Admin Dashboard"
 # ==================== CUSTOM ADMIN CLASSES ====================
 class ReadOnlyAdminMixin:
     """Mixin to make admin read-only"""

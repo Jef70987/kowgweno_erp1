@@ -10,7 +10,7 @@ from .models import *
 
 admin.site.site_header = "KOGWENO ERP ADMINISTRATION"
 admin.site.site_title = "Admin Portal"
-admin.site.index_title = "Welcome to Admin Dashboard"
+admin.site.index_title = "Kogweno school"
 # ==================== CUSTOM ADMIN CLASSES ====================
 class ReadOnlyAdminMixin:
     """Mixin to make admin read-only"""
